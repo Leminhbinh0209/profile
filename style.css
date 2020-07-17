@@ -166,7 +166,7 @@ a:hover {
 .languages {
     display: flex;
     justify-content: space-around;
-    margin-top: 20px;
+    margin-top: 45px;
 }
 
 img.langpr {
