@@ -174,9 +174,11 @@ img.langpr {
 } 
 
 @media screen and (max-width: 760px){
-    .s2 h1 ,.s3 h1 {
-        font-size: 38px;
+    .welcome, .s2 h1 ,.s3 h1 { font-size: 8vw;
     }
+    .projects, .description { font-size: 4vw;
+    }
+    ul {font-size: 5vw;}
     .DiaPer1, .DiaPer2  {
         size: 0;
         display: none;
