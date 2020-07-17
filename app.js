@@ -30,12 +30,18 @@ new fullpage("#fullpage", {
         }
         if (destination.index === 2){
             const pros = document.querySelectorAll('.projects');
+            const langpr = document.querySelectorAll('.langpr');
             tl.fromTo(title, 0.5, {y:'50', opacity:0}, {y:0, opacity:1});
             const dia = document.querySelectorAll('.DiaPer2');
             console.log(dia);
             tl.fromTo(dia, 0.55, { x:"-750"}, {x:0})
             .fromTo(pros,  0.45, { opacity:0}, {opacity:1});
 
+            tl.fromTo(langpr[0], 0.35, {  height: "0%",opacity:0}, { height: "30%", opacity:1, ease:Power2.easeInOut})
+            .fromTo(langpr[1], 0.35, {height: "0%",opacity:0}, { height: "30%", opacity:1, ease:Power2.easeInOut})
+            .fromTo(langpr[2], 0.35, {  height: "0%",opacity:0}, { height: "30%", opacity:1, ease:Power2.easeInOut})
+            .fromTo(langpr[3], 0.35, {  height: "0%",opacity:0}, {height: "30%", opacity:1, ease:Power2.easeInOut})
+            ;
         }
     }
 })

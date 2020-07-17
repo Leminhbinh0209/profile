@@ -125,3 +125,15 @@ a:hover {
 .pr1:hover {
     background-color: rgb(218, 218, 218);
 }
+div.languages {
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+img.langpr {
+    width: 90px;
+    margin: 25px;
+}
