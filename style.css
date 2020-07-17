@@ -163,6 +163,12 @@ a:hover {
     top: 5%;
     left: 10%;
 } 
+
+.rightColInfor {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
 .languages {
     display: flex;
     justify-content: space-around;
@@ -172,6 +178,16 @@ a:hover {
 img.langpr {
     width: 90px;
 } 
+
+.contact {
+    border-top-left-radius: 2rem;
+    /* height: 15%; */
+    background-color: rgb(85, 85, 85);
+    color: white;
+    text-align: center;
+    padding:10px;
+}
+
 
 @media screen and (max-width: 760px){
     .welcome, .s2 h1 ,.s3 h1 { font-size: 8vw;

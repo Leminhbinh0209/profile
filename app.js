@@ -31,6 +31,7 @@ new fullpage("#fullpage", {
         if (destination.index === 2){
             const pros = document.querySelectorAll('.projects');
             const langpr = document.querySelectorAll('.langpr');
+            const contact = section.querySelector('.contact');
             tl.fromTo(title, 0.5, {y:'50', opacity:0}, {y:0, opacity:1});
             const dia = document.querySelectorAll('.DiaPer2');
             console.log(dia);
@@ -41,6 +42,7 @@ new fullpage("#fullpage", {
             .fromTo(langpr[1], 0.35, {height: "0%",opacity:0}, { height: "100%", opacity:1, ease:Power2.easeInOut})
             .fromTo(langpr[2], 0.35, {  height: "0%",opacity:0}, { height: "100%", opacity:1, ease:Power2.easeInOut})
             .fromTo(langpr[3], 0.35, {  height: "0%",opacity:0}, {height: "100%", opacity:1, ease:Power2.easeInOut})
+            .fromTo(contact, 0.5, {  height: "0%",opacity:0}, {height: "10%", opacity:1, ease:Power2.easeInOut})
             ;
         }
     }
