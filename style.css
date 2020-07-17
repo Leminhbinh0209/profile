@@ -66,35 +66,8 @@ a:hover {
     }
 }
 
-.DiaPer1 {
-    height:40%;
-    position: absolute;
-    top: 55%;
-    left: 70%;
-    transform: translate(-60%, -55%);
-}
 
-.per1 {
-    height:40%;
-    position: absolute;
-    top: 70%;
-    left: 90%;
-    transform: translate(-90%, -70%);
-} 
 
-.DiaPer2 {
-    height:50%;
-    position: absolute;
-    top: 34%;
-    left: 100px;
-}
-
-.per2 {
-    height:50%;
-    position: absolute;
-    top: 42%;
-    left: 380px;
-} 
 
 
 .s1 {
@@ -116,22 +89,20 @@ a:hover {
 .welcome {
     
     background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+    background-color: rgba(0,0,0, 0.4); 
     color: white;
     font-weight: bold;
     border: 6px solid #ffffff;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 2;
-    width: 80%;
-    height: 40%;
-    padding: 20px;
+
     text-align: center;
+}
+.headers2, .headers3 {
+    height: 20%;
 }
 
 .s2 h1, .s3 h1 {
+    display: block;
+    margin-top: 20px;
     font-size: 64px;
     position: absolute;
     top: 10%;
@@ -142,50 +113,74 @@ a:hover {
     -webkit-text-fill-color: transparent;
 
 }
-
+.contents2 , .contents3{
+    height: 80%;
+}
 .description {
     margin: 20px;
-    width: 35%;
+    margin-top: 5%;
+    margin-left: 15%;
+    font-size: 30px;
+}
+
+.DiaPer1 {
+    height:50%;
+}
+
+.per1 {
+    position: absolute;
+    top: 20%;
+    left: 60%;
+}  
+
+.dia1 {
+    position: absolute;
+    top: 10%;
+    left: 10%;
+}  
+.projects {
+    margin: 20px;
     margin-top: 5%;
     margin-left: 5%;
     font-size: 30px;
 }
-.edu {
-    position: absolute;
-    top: 10%;
+
+
+.DiaPer2 {
+    height:80%;
 }
 
-.work {
+.per2 {
+    height:70%;
     position: absolute;
-    bottom: 20%;
-}
+    top: 25%;
+    left: 55%;
+}  
 
-.projects {
+.dia2 {
+    width: 80%;
     position: absolute;
-    top: 35%;
-    right: 10%;
-    margin: 20px;
-    width: 35%;
-    margin-top: 0%;
-    margin-left: 50%;
-    font-size: 26px;
-}
-.pr1 {
-    background-color: rgb(218, 218, 218);
-}
-
-.pr1:hover {
-    background-color: rgb(218, 218, 218);
-}
-div.languages {
-    position: absolute;
-    top: 65%;
-    left: 50%;
+    top: 5%;
+    left: 10%;
+} 
+.languages {
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-around;
+    margin-top: 20px;
 }
 
 img.langpr {
     width: 90px;
-    margin: 25px;
+} 
+
+@media screen and (max-width: 760px){
+    .s2 h1 ,.s3 h1 {
+        font-size: 38px;
+    }
+    .DiaPer1, .DiaPer2  {
+        size: 0;
+        display: none;
+    }
+    
+    
 }
