@@ -41,9 +41,14 @@ new fullpage("#fullpage", {
             tl.fromTo(langpr[0], 0.35, {  height: "0%",opacity:0}, { height: "100%", opacity:1, ease:Power2.easeInOut})
             .fromTo(langpr[1], 0.35, {height: "0%",opacity:0}, { height: "100%", opacity:1, ease:Power2.easeInOut})
             .fromTo(langpr[2], 0.35, {  height: "0%",opacity:0}, { height: "100%", opacity:1, ease:Power2.easeInOut})
-            .fromTo(langpr[3], 0.35, {  height: "0%",opacity:0}, {height: "100%", opacity:1, ease:Power2.easeInOut})
-            .fromTo(contact, 0.5, {  height: "0%",opacity:0}, {height: "10%", opacity:1, ease:Power2.easeInOut})
+            .fromTo(langpr[3], 0.35, {  height: "0%",opacity:0}, {height: "100%", opacity:1, ease:Power2.easeInOut})  
+            // .fromTo(contact, 0.5, {  height: "0%",opacity:0}, {height: "10%", opacity:1, ease:Power2.easeInOut})
             ;
+        }
+        if (destination.index === 3){
+            const pub = document.querySelectorAll('.public');
+            tl.fromTo(title, 0.5, {y:'50', opacity:0}, {y:0, opacity:1});
+            tl.fromTo(pub, 0.25, {  height: "0%",opacity:0}, { height: "100%", opacity:1, ease:Power2.easeInOut});
         }
     }
 })
